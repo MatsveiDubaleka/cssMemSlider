@@ -9,69 +9,90 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="heading">
-        <h1>CSS Mem Slider</h1>
-      </div>
-      <div class="slider">
-        <div class="slider__container">
-          <div class="slider__item">
-            <img
-              src="./assets/img/student1_1.jpg"
-              alt="Max Score ... Student 1"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              src="./assets/img/student1_2.jpg"
-              alt="Your self score... Student 1"
-            />
-          </div>
-          <div class="slider__item">
-            <img
-              src="./assets/img/student1_3.jpg"
-              alt="Student1...Your Project"
-            />
+      <header>
+        <div class="heading">
+          <h1>CSS Mem Slider</h1>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <input
+            type="radio"
+            name="controls"
+            id="slider__radio1"
+            class="input hidden"
+            checked
+          />
+          <input
+            type="radio"
+            name="controls"
+            id="slider__radio2"
+            class="input hidden"
+          />
+          <input
+            type="radio"
+            name="controls"
+            id="slider__radio3"
+            class="input hidden"
+          />
+          <input
+            type="radio"
+            name="controls"
+            id="slider__radio4"
+            class="input hidden"
+          />
+          <div class="slider__container container">
+            <div class="slider__mems">
+              <div class="slider__images">
+                <div class="slider__item slider__item-1"></div>
+                <div class="slider__item slider__item-2"></div>
+                <div class="slider__item slider__item-3"></div>
+                <div class="slider__item slider__item-4"></div>
+              </div>
+            </div>
+            <div class="slider__bottom">
+              <div class="slider__captions">
+                <div class="slider__captions-container">
+                  <p class="captions__item">Max Score ... Student1</p>
+                  <p class="captions__item">Your self score ... Student1</p>
+                  <p class="captions__item">Student 1 ... Your project</p>
+                  <p class="captions__item">
+                    Me when i See Student1 in Real Life
+                  </p>
+                </div>
+              </div>
+              <div class="slider__controls">
+                <div class="slider__controls-wrapper">
+                  <label
+                    for="slider__radio1"
+                    class="controls__item controls__item-1"
+                  >
+                    <i class="icon"></i></label
+                  ><label
+                    for="slider__radio2"
+                    class="controls__item controls__item-2"
+                    ><i class="icon"></i></label
+                  ><label
+                    for="slider__radio3"
+                    class="controls__item controls__item-3"
+                    ><i class="icon"></i></label
+                  ><label
+                    for="slider__radio4"
+                    class="controls__item controls__item-4"
+                    ><i class="icon"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="slider__btns">
-          <div class="slider__text-container">
-            <div class="slider__text-item">
-              <p>Your self score...Student1</p>
-            </div>
-            <div class="slider__text-item">
-              <p></p>
-            </div>
-            <div class="slider__text-item">
-              <p></p>
-            </div>
-            <div class="slider__text-item">
-              <p></p>
-            </div>
-          </div>
-          <div class="slider__input-container">
-            <label for="slider-1" class="label">
-              <input type="radio" name="slider" id="slider-1" checked />
-              <span class="checkmark"></span>
-            </label>
-            <label for="slider-2" class="label">
-              <input type="radio" name="slider" id="slider-2" />
-              <span class="checkmark"></span>
-            </label>
-            <label for="slider-3" class="label">
-              <input type="radio" name="slider" id="slider-3" />
-              <span class="checkmark"></span>
-            </label>
-            <label for="slider-4" class="label">
-              <input type="radio" name="slider" id="slider-4" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+      </main>
+      <footer>
+        <div class="copyright">2022</div>
+        <div class="github">
+          <a href="https://github.com/MatsveiDubaleka">Github</a>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
-
-<!-- Привязать к ЛЭЙБЛУ -->
-<!-- Transform: translate -->
-<!-- (`date -R`) -->
